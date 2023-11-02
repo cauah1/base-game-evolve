@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVOLVE - Tela de Início</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+         @font-face {
+    font-family: pixel;
+    src: url('./PressStart2P-Regular.ttf');
+}
+        h1 {
+            font-family: pixel;
+            font-size: 50px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            src: url('./PressStart2P-Regular.ttf');
+        }
+
+        button {
+            font-family: pixel;
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            background-color: transparent;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            color: rgb(243, 243, 243);
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: scale(1.05);
+        }
+      
+
+
+    </style>
+</head>
+<body>
+    <h1>EVOLVE</h1>
+    <button>NOVO JOGO</button>
+    <button id="btnMenu">OPÇÕES</button>
+    <button id="btnSair">SAIR</button>
+   
+    <script> //referente a função de que ao clicar no botão ele saia da pagina
+        function menuDeOpções() {
+
+        }
+   function sairDaPagina() {
+            window.close();
+        }
+        document.getElementById('btnSair').addEventListener('click', sairDaPagina);
+        
+    </script>
+    
+</body>
+</html>
